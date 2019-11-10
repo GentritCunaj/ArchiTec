@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: block;
+    float: left;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translate(-50%);
+    transform: translateY(-50%);
+}
+
+.list {
+    float: right;
+    padding: 5px;
+    list-style: none;
+    margin-top: 32px;
+    font-size: 20px;
+}
+
+.nav-bar {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+
+.nav-bar ul li {
+    margin-right: 8px;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    font-family: Helvetica;
+    font-weight: lighter;
+
+}
+
+.nav-bar ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: darkslateblue;
+    border-right: solid grey 1px;
+
+}
+
+.nav-bar ul li a:hover {
+    color: white;
+    background-color: lightgrey;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    animation: animate slide 40s infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text h1 {
+    position: relative;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 50px;
+    color: #34495e;
+}
+
+.our-company h3 {
+    margin-top: 60px;
+    padding: 80px;
+    text-align: center;
+    font-size: 28px;
+    color: #40739e;
+    font-family: Helvetica;
+    line-height: 50px;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.8);
+    /* Black background with 0.5 opacity */
+    color: #dcdde1;
+    /* Grey text */
+}
+
+#button {
+    text-align: center;
+    margin: 50px;
+}
+
+.but1 {
+    font-size: 30px;
+    background-color: #1c2830c7;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.but1 a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.but1:hover {
+    background-color: #1c2830ec;
+}
+
+@keyframes slide {
+
+    0%,
+    100% {
+        background-image: url(background.jpg);
+    }
+
+    20% {
+        background-image: url(1.jpg);
+    }
+
+    20.01% {
+        background-image: url(2.jpg);
+    }
+
+    40% {
+        background-image: url(3.jpg);
+    }
+
+    40.01% {
+        background-image: url(background.jpg);
+    }
+    
+    60% {
+        background-image: url(1.jpg);
+    }
+    60.01% {
+        background-image: url(2.jpg);
+    }
+    80% {
+        background-image: url(3.jpg);
+    }
+    80.01% {
+        background-image: url(background.jpg);
+    }
+    100% {
+        background-image: url(1.jpg);
+    }
+}
